@@ -40,23 +40,23 @@ global.groupOnly = false //bot hanya bisa di gunakan dalam grup jika true
 //language
 //Available in indonesia , english & spanyol 
 //You can request others language 
-global.language = indonesia //change indonesia to english if you don't understand the language used by the bot
+global.language = english //change indonesia to english if you don't understand the language used by the bot
 //global.language = english // use this for English language
 //global.language = spanyol // use this for Spanyol language
 
 // Other
 // Other
 global.botname = "Alphabot-Mdོ" //namabot kalian
-global.ownername = "ᴹᴿ᭄ ZeeoneOfcོ ×፝֟͜×" //nama kalian
+global.ownername = "ᴹᴿ᭄ Cosmos ×፝֟͜×" //nama kalian
 global.myweb = "https://s.id/zeeoneofc" //bebas asal jan hapus
-global.youtube = "https://youtube.com/c/@ZeeoneOfc" //bebas asal jan hapus
+global.youtube = "https://instagram.com/emersontfc" //bebas asal jan hapus
 global.myweb2 = "https://s.id/zeeoneofc" //bebas
-global.email = "zeeoneofc@gmail.com" //bebas
-global.region = "Indonesia" //bebas
-global.timezone = 'Asia/Jakarta' //  timezone wib
-global.premium = ['62887435047326'] //premium user
-global.owner = ["62887435047326", "62821931157232"] //ganti agar fitur owner bisa di gunakan
-global.ownernomer = "62887435047326" // nomor wa kalian
+global.email = "galeriaemerson@gmail.com" //bebas
+global.region = "Mozambique" //bebas
+global.timezone = 'Africa/Maputo' //  timezone wib
+global.premium = ['258848858288'] //premium user
+global.owner = ["258848858288", "258846666288"] //ganti agar fitur owner bisa di gunakan
+global.ownernomer = "258848858288" // nomor wa kalian
 global.ownernomerr = "+"+ownernomer //nmr wa kalian
 global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
@@ -76,12 +76,12 @@ global.limitawal = {
 }
 global.buttonDefault = [{
    urlButton: {
-      displayText: 'Youtube Channel',
+      displayText: 'Meu Instagram',
       url: youtube
    }
 }, {
    urlButton: {
-      displayText: 'Website',
+      displayText: 'Site',
       url: myweb
    }
 }, {
@@ -91,23 +91,23 @@ global.buttonDefault = [{
    }
 }, {
    quickReplyButton: {
-      displayText: 'Owner 👤',
+      displayText: 'Administrador 👤',
       id: '.owner'
    }
 }, {
    quickReplyButton: {
-      displayText: '⚡ Command ⚡',
+      displayText: '⚡ Comandos ⚡',
       id: '.command'
    }
 }]
 global.buttonDefault2 = [{
    urlButton: {
-      displayText: 'Youtube Channel',
+      displayText: 'Meu Instagram',
       url: youtube
    }
 }, {
    urlButton: {
-      displayText: 'Website',
+      displayText: 'Site',
       url: myweb
    }
 }, {
@@ -117,26 +117,26 @@ global.buttonDefault2 = [{
    }
 }, {
    quickReplyButton: {
-      displayText: 'Owner 👤',
+      displayText: 'Administrador 👤',
       id: '.owner'
    }
 }, {
    quickReplyButton: {
-      displayText: '🎁 Donasi 🎁',
+      displayText: '🎁 Manda esse tako 🎁',
       id: '.donasi'
    }
 }]
 global.buttonDefault3 = [{
       buttonId: `.owner`,
       buttonText: {
-         displayText: '🙍‍♂️ Owner'
+         displayText: '🙍‍♂️ Administrador'
       },
       type: 1
    },
    {
       buttonId: `.donasi`,
       buttonText: {
-         displayText: 'Donation 💰'
+         displayText: 'Manda esse tako 💰'
       },
       type: 1
    }
@@ -144,13 +144,13 @@ global.buttonDefault3 = [{
 global.buttonDefault4 = [{
    buttonId: '.command',
    buttonText: {
-      displayText: '༺ Back'
+      displayText: '༺ Voltar'
    },
    type: 1
 }, {
    buttonId: '.owner',
    buttonText: {
-      displayText: 'Owner ༻'
+      displayText: 'Admin ༻'
    },
    type: 1
 }]
@@ -285,17 +285,17 @@ global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutp
 global.prefa = ['', '!', '.', '🐦', '🐤', '🗿']
 global.sp = '⭔'
 global.mess = {
-   sukses: '🤗Done, Oke Desu~',
-   admin: 'Perintah Ini Hanya Bisa Digunakan Oleh Admin !',
-   botAdmin: 'Perintah Ini Hanya Bisa Digunakan Ketika Bot Menjadi Admin !',
-   owner: 'Perintah Ini Hanya Bisa Digunakan Oleh Owner !',
-   group: 'Perintah Ini Hanya Bisa Digunakan Di Group !',
-   private: 'Perintah Ini Hanya Bisa Digunakan Di Private !',
-   bot: 'Fitur Khusus Pengguna Nomor Bot',
-   errtoimg: 'Maaf Saat Ini Belum Support Sticker Gif !',
-   wait: '⏳ Sedang Di Proses',
-   lockCmd: 'Fitur Tidak Diaktifkan Oleh Owner!',
-   example1: 'Selamat Datang @user Di Group @subject Jangan Lupa Baca Rules @desc\n\nNote :\n1. @user (Mention User Join)\n2. @bio (Get Bio User Join)\n3. @tanggal (Date Now)\n4. @desc (Get Description Group)\n5. @subject (Group Name)'
+   sukses: '🤗Aqui esta!!!~',
+   admin: 'Este comando só pode ser usado pelo administrador !',
+   botAdmin: 'Este comando só pode ser usado quando eu me torno um administrador !',
+   owner: 'Este comando só pode ser usado pelo proprietário !',
+   group: 'Este comando só pode ser usado em grupos !',
+   private: 'Este comando só pode ser usado em privado !',
+   bot: 'Recursos especiais para usuários de número de bot',
+   errtoimg: 'Desculpe, atualmente não suporta GIF Sticker !',
+   wait: '⏳Por favor aguarde um momento, estou fazendo as buscas',
+   lockCmd: 'Recursos não ativados pelo proprietário!',
+   example1: 'Bem vindo Prezado @user ao Grupo @subject Leia as regras e respeite os integrantes @desc\n\nNota :\n1. @user (mencione a entrada do usuário)\n2. @bio (Obter associação de usuário bio)\n3. @tanggal (Data Agora)\n4. @desc (Obter grupo de descrição)\n5. @assunto (nome do grupo)'
 }
 
 let file = require.resolve(__filename)

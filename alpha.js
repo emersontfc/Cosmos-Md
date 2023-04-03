@@ -537,7 +537,7 @@ const { isSetLeft, getTextSetLeft } = require('./lib/setleft')
       text: text,
       contextInfo: {
          "externalAdReply": {
-            "title": `Selamat ${salam} ${pushname}`,
+            "title": `Bem Vindo ${salam} ${pushname}`,
             "body": `© ${ownername}`,
             "previewType": "PHOTO",
             "thumbnailUrl": ``,
