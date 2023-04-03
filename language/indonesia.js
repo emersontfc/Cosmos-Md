@@ -633,7 +633,7 @@ exports.private = () =>{
 	return`Fitur hanya bisa di gunakan di private chat`
 	}
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar`
+    return `⏳ Por favor espere um momento`
 }
 exports.ok = () => {
     return `✅ Done.`

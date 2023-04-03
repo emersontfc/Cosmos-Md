@@ -32,59 +32,58 @@ exports.profile = (username, m, about, pasangan, PhoneNumber, exp, min, xp, math
 exports.needReg = (a, b, c) =>{
 	return`🇲🇨 Daftar dulu bang
 
-Gini : #daftar nama|umur|gender|hobi
+Assim: #lista de nomes|idade|gênero|hobbies
 
-Contoh : #daftar ${a}|18|cowo|Game
-
-
-
-🇺🇲 Please register first
+Exemplo: #register ${a}|18|menino|Jogo
 
 
+🇺🇲 Por favor, registre-se primeiro
 
-Like this : #register name|age|gender|hobby
 
-Example : #register ${a}|18|male|Games`
+
+Assim: #register nome|idade|sexo|hobby
+
+Exemplo: #register ${a}|18|masculino|Jogos`
 }
 exports.Nolimit = (prefix) =>{
-	return`Your limit today has run out ⚠️\n\nPlease buy a limit by typing ${prefix}buy or ${prefix}buyall`
+	return`Seu limite hoje acabou ⚠️\n\nCompre um limite digitando${prefix}buy or ${prefix}buyall`
 	}
 exports.i = () =>{
-	return`The serial number (sn) is wrong\n.ceksn -- _check serial number_`
+	return`O número de série (sn) está errado\n.ceksn -- _verifique o número de série_`
 	}
 exports.NoseriOk = () =>{
-	return`Successfully cancel registration!`
+	return`Cancelar registro com sucesso!`
 	}
 exports.ExReg = (c) =>{
-	return`🇲🇨 Gunakan tanda "|" sebagai pembatas
+	return`🇲🇨Use o sinal "|" como uma barreira
 
-Gini : #daftar nama|umur|gender|hobi
+Assim: #lista de nomes|idade|gênero|hobbies
 
-Contoh : #daftar ${a}|18|cowo|Game
-
-
-
-🇺🇲 Use the "|" sign as a barrier
+Exemplo: #register ${a}|18|menino|Jogo
 
 
-Like this : #register name|age|gender|hobby
 
-Example : #register ${a}|18|male|Games`
+🇺🇲 Use o "|" assinar como uma barreira
+
+
+Assim: #register nome|idade|sexo|hobby
+
+Exemplo: #register ${a}|18|masculino|Jogos`
 	}
 exports.DoneReg = () =>{
-	return`You are already registered in the database`
+	return`Você já está cadastrado no banco de dados`
 	}
 exports.UmurReg = () =>{
-	return`Age must be a number`
+	return`Idade deve ser um número`
 	}
 exports.NamaReg = () =>{
 	return`Your name is really long, just use your first name`
 	}
 exports.HobiReg = () =>{
-	return`You have a lot of hobbies, just 1 or 2 hobbies`
+	return`Você tem muitos hobbies, apenas 1 ou 2 hobbies`
 	}
 exports.RegReg = (a,b,c,d,e,f,g,h,i) =>{
-	return`╭─「 *SUCCESSFUL VERIFICATION* 」
+	return`╭─「 *VERIFICAÇÃO COM SUCESSO* 」
 │\`\`\`Verification Success With\`\`\` 
 │
 │\`\`\`SN: ${a}\`\`\`
@@ -101,13 +100,13 @@ exports.RegReg = (a,b,c,d,e,f,g,h,i) =>{
 ╰─────────────────────`
 	}
 exports.genderReg = (a) =>{
-	return`Select one ( male / female)\n\n${a}`
+	return`Selecione um (masculino / feminino)\n\n${a}`
 	}
 exports.UmurXReg = () =>{
-	return`You are too old`
+	return`Você é muito velho`
 	}
 exports.firstChat = (a, b, c) =>{
-	return`Hi ${a} ${b} 🤗, I am ${c} whatsapp bots. Can i help u?`
+	return`Hi ${a} ${b} 🤗, I am ${c} bots do whatsapp. Posso te ajudar?`
 	}
 
 exports.AddstikOk = (q, a, b, prefix, command) =>{
@@ -753,7 +752,6 @@ exports.listMenu = (prefix) => {
 │○ ${prefix}stickereffect
 │○ ${prefix}downloadmenu
 │○ ${prefix}randomanime
-│○ ${prefix}nsfwmenu
 │○ ${prefix}textpromenu
 │○ ${prefix}othermenu
 │○ ${prefix}gamemenu
@@ -771,7 +769,7 @@ exports.listMenu = (prefix) => {
 exports.listMenu2 = (prefix) => {
     return `╭─❒ 「 Bot Info 」 
 │○ ${prefix}owner
-│○ ${prefix}rules
+│○ ${prefix}regras
 │○ ${prefix}sc
 │○ ${prefix}ping
 │○ ${prefix}runtime
@@ -806,7 +804,6 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}addpremium
 │○ ${prefix}delpremium
 │○ ${prefix}listpremium
-│○ ${prefix}nsfw [on/off]
 │○ ${prefix}mute [on/off]
 │○ ${prefix}autoblok212 [on/off]
 │○ ${prefix}banchat
@@ -933,11 +930,11 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}setppgrup [reply image]
 │○ ${prefix}pppanjanggc
 │○ ${prefix}setpppanjanggc
-│○ ${prefix}revoke
-│○ ${prefix}leave
+│○ ${prefix}revogar
+│○ ${prefix}sair
 │○ ${prefix}add [62***]
-│○ ${prefix}kick @tag
-│○ ${prefix}leave
+│○ ${prefix}remover @tag
+│○ ${prefix}sair
 │○ ${prefix}linkgc
 │○ ${prefix}welcome [on/off]
 │○ ${prefix}goodbye [on/off]
@@ -959,20 +956,12 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}cekdemote
 │○ ${prefix}delpromote
 │○ ${prefix}deldemote
-│○ ${prefix}nsfw [on/off]
 │○ ${prefix}antilink [on/off]
 │○ ${prefix}antiwame [on/off]
 │○ ${prefix}take packname|author
 │○ ${prefix}group [open/close]
 │○ ${prefix}tagall [text]
 ╰❒ ${prefix}hidetag [text]
-
-╭─❒ 「 Anime 」 
-│○ ${prefix}quotesanime
-│○ ${prefix}anime [query]
-│○ ${prefix}animeinfo
-│○ ${prefix}manga [query]
-╰❒ ${prefix}character [query]
 
 ╭─❒ 「 Tag 」 
 │○ ${prefix}stickertag
@@ -994,14 +983,12 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}openaiimg [query]
 │○ ${prefix}chatgpt [query]
 │○ ${prefix}githubsearch [query]
-│○ ${prefix}kbbi [query]
 │○ ${prefix}lirik [query]
 │○ ${prefix}wallpaper [query]
 │○ ${prefix}google [query]
 │○ ${prefix}wikimedia [query]
 │○ ${prefix}apksearch
 │○ ${prefix}findapk
-│○ ${prefix}hentai
 │○ ${prefix}wattpad [query]
 │○ ${prefix}webtoons [query]
 │○ ${prefix}brainly [query]
@@ -1045,7 +1032,6 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}instagram [reply image/stiker]
 │○ ${prefix}greyscale [reply image/stiker]
 │○ ${prefix}glitch2 [reply image/stiker]
-│○ ${prefix}gay [reply image/stiker]
 │○ ${prefix}frame [reply image/stiker]
 │○ ${prefix}fire [reply image/stiker]
 │○ ${prefix}distort [reply image/stiker]
@@ -1055,7 +1041,6 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}circle [reply image/stiker]
 │○ ${prefix}challenger [reply image/stiker]
 │○ ${prefix}burn [reply image/stiker]
-│○ ${prefix}brazzers [reply image/stiker]
 ╰❒ ${prefix}beautiful [reply image/stiker]
 
 
@@ -1106,73 +1091,7 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}gitclone [link repo]
 │○ ${prefix}gitrepo [username repo branch]
 │○ ${prefix}mediafire [link]
-│○ ${prefix}nhentaipdf [id]
 ╰❒ ${prefix}twitter link
-
-╭─❒ 「 Primbon 」
-│○ ${prefix}nomorhoki 887435047326
-│○ ${prefix}artimimpi [query]
-│○ ${prefix}artinama [query]
-│○ ${prefix}ramaljodoh
-│○ ${prefix}ramaljodohbali
-│○ ${prefix}suamiistri
-│○ ${prefix}ramalcinta
-│○ ${prefix}cocoknama
-│○ ${prefix}pasangan
-│○ ${prefix}jadiannikah
-│○ ${prefix}sifatusaha
-│○ ${prefix}rezeki
-│○ ${prefix}pekerjaan
-│○ ${prefix}nasib
-│○ ${prefix}penyakit
-│○ ${prefix}tarot
-│○ ${prefix}fengshui
-│○ ${prefix}haribaik
-│○ ${prefix}harisangar
-│○ ${prefix}harisial
-│○ ${prefix}nagahari
-│○ ${prefix}arahrezeki
-│○ ${prefix}peruntungan
-│○ ${prefix}weton
-│○ ${prefix}karakter
-│○ ${prefix}keberuntungan
-│○ ${prefix}memancing
-│○ ${prefix}masasubur
-│○ ${prefix}zodiak 
-╰❒ ${prefix}shio [query]
-
-╭─❒ 「 Random Anime 」
-│○ ${prefix}loli
-│○ ${prefix}neko
-│○ ${prefix}waifu
-│○ ${prefix}shinobu
-│○ ${prefix}megumin
-│○ ${prefix}bully
-│○ ${prefix}cuddle
-│○ ${prefix}cry
-│○ ${prefix}hug
-│○ ${prefix}awoo
-│○ ${prefix}kiss
-│○ ${prefix}lick
-│○ ${prefix}pat
-│○ ${prefix}smug
-│○ ${prefix}bonk
-│○ ${prefix}yeet
-│○ ${prefix}blush
-│○ ${prefix}smile
-│○ ${prefix}wave
-│○ ${prefix}highfive
-│○ ${prefix}handhold
-│○ ${prefix}nom
-│○ ${prefix}bite
-│○ ${prefix}glomp
-│○ ${prefix}slap
-│○ ${prefix}kill
-│○ ${prefix}happy
-│○ ${prefix}wink
-│○ ${prefix}poke
-│○ ${prefix}dance
-╰❒ ${prefix}cringe
 
 ╭─❒ 「 Voice Change Menu 」
 │○ ${prefix}bass
@@ -1210,79 +1129,6 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}addstik
 │○ ${prefix}delstik
 ╰❒ ${prefix}liststik
-
-╭─❒ 「 Nsfw & Sfw 」
-│○ ${prefix}ahegao
-│○ ${prefix}anal
-│○ ${prefix}avatar2
-│○ ${prefix}baka
-│○ ${prefix}bdsm
-│○ ${prefix}bj
-│○ ${prefix}blowjob
-│○ ${prefix}boobs
-│○ ${prefix}classic
-│○ ${prefix}cuckold
-│○ ${prefix}cuddle
-│○ ${prefix}cum
-│○ ${prefix}cumarts
-│○ ${prefix}cumsluts
-│○ ${prefix}ero
-│○ ${prefix}erofeet
-│○ ${prefix}erokemonomimi
-│○ ${prefix}erokitsune
-│○ ${prefix}eroneko
-│○ ${prefix}eroyuri
-│○ ${prefix}feed
-│○ ${prefix}feet
-│○ ${prefix}feetgif
-│○ ${prefix}femdom
-│○ ${prefix}foot
-│○ ${prefix}foxgirl
-│○ ${prefix}futanari
-│○ ${prefix}gangbang
-│○ ${prefix}girl-solo
-│○ ${prefix}girl-solo-gif
-│○ ${prefix}glasses
-│○ ${prefix}hentai
-│○ ${prefix}hentai
-│○ ${prefix}hentai-gif
-│○ ${prefix}holo
-│○ ${prefix}holo2
-│○ ${prefix}holoero
-│○ ${prefix}hug
-│○ ${prefix}jahy
-│○ ${prefix}kemonomimi
-│○ ${prefix}kemonomimi2
-│○ ${prefix}keta
-│○ ${prefix}kiss
-│○ ${prefix}kitsune
-│○ ${prefix}kuni
-│○ ${prefix}lesbian
-│○ ${prefix}lizard
-│○ ${prefix}masturbation
-│○ ${prefix}meowi
-│○ ${prefix}neko
-│○ ${prefix}neko-gif
-│○ ${prefix}neko-sfw
-│○ ${prefix}neko2
-│○ ${prefix}nsfw-neko
-│○ ${prefix}orgy
-│○ ${prefix}panties
-│○ ${prefix}pat
-│○ ${prefix}poke
-│○ ${prefix}pussyart
-│○ ${prefix}pussywankgif
-│○ ${prefix}slap
-│○ ${prefix}smug
-│○ ${prefix}spank
-│○ ${prefix}tentacles
-│○ ${prefix}thighs
-│○ ${prefix}tickle
-│○ ${prefix}tits
-│○ ${prefix}trap
-│○ ${prefix}woof
-│○ ${prefix}yuri
-╰❒ ${prefix}zettai
 
 ╭─❒ 「 Ephoto360 Menu 」
 │○ ${prefix}1917text
@@ -1333,7 +1179,6 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}moderngoldsilver
 │○ ${prefix}multicolor
 │○ ${prefix}nameonheart
-│○ ${prefix}noeltext
 │○ ${prefix}projectyasuo
 │○ ${prefix}pubgbirthday
 │○ ${prefix}pubgglicthvideo 
@@ -1380,7 +1225,6 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}stone text|text2
 │○ ${prefix}marvel text|text2
 │○ ${prefix}marvel2 text|text2
-│○ ${prefix}pornhub text|text2
 │○ ${prefix}avengers text|text2
 │○ ${prefix}metal-rainbow text|text2
 │○ ${prefix}metal-gold text|text2
@@ -1558,88 +1402,6 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}memegen [text|text]
 ╰❒
 
-╭─❒ 「 Game Menu 」
-│○ ${prefix}tembak
-│○ ${prefix}tolak
-│○ ${prefix}terima
-│○ ${prefix}putusin
-│○ ${prefix}ikhlasin
-│○ ${prefix}cekpacar
-│○ ${prefix}kuismath
-│○ ${prefix}tebakgambar
-│○ ${prefix}tebakkata
-│○ ${prefix}tebakbendera
-│○ ${prefix}tebakkalimat
-│○ ${prefix}tebaksiapa
-│○ ${prefix}tebakkabupaten
-│○ ${prefix}tebakkimia
-│○ ${prefix}tebaklirik
-│○ ${prefix}tebaktebakan
-│○ ${prefix}tekateki
-│○ ${prefix}susunkata
-╰❒ ${prefix}caklontong
-
-
-╭─❒ 「 Asupan Menu 」
-│○ ${prefix}chika
-│○ ${prefix}delvira
-│○ ${prefix}ayu
-│○ ${prefix}bunga
-│○ ${prefix}aura
-│○ ${prefix}nisa
-│○ ${prefix}ziva
-│○ ${prefix}yana
-│○ ${prefix}viona
-│○ ${prefix}syania
-│○ ${prefix}riri
-│○ ${prefix}syifa
-│○ ${prefix}mama_gina
-│○ ${prefix}alcakenya
-│○ ${prefix}mangayutri
-│○ ${prefix}rikagusriani
-│○ ${prefix}asupan
-│○ ${prefix}bocil
-│○ ${prefix}geayubi
-│○ ${prefix}santuy
-│○ ${prefix}ukhty
-╰❒ ${prefix}syifa
-
-╭─❒ 「 Telegram Sticker 」
-│○ ${prefix}awoawo
-│○ ${prefix}benedict
-│○ ${prefix}chat
-│○ ${prefix}dbfly
-│○ ${prefix}dino_kuning
-│○ ${prefix}doge
-│○ ${prefix}gojosatoru
-│○ ${prefix}hope_boy
-│○ ${prefix}jisoo
-│○ ${prefix}kr_robot
-│○ ${prefix}kucing
-│○ ${prefix}lonte
-│○ ${prefix}manusia_lidi
-│○ ${prefix}menjamet
-│○ ${prefix}meow
-│○ ${prefix}nicholas
-│○ ${prefix}patrick
-│○ ${prefix}popoci
-│○ ${prefix}sponsbob
-│○ ${prefix}kawan_sponsbob
-╰❒ ${prefix}tyni
-
-╭─❒ 「 Random Cewe 」
-│○ ${prefix}china 
-│○ ${prefix}indonesia 
-│○ ${prefix}malaysia 
-│○ ${prefix}thailand 
-│○ ${prefix}korea 
-│○ ${prefix}japan 
-│○ ${prefix}vietnam 
-│○ ${prefix}jenni 
-│○ ${prefix}jiso 
-│○ ${prefix}lisa  
-╰❒ ${prefix}rose
-
 ╭─❒ 「 Logo Menu 」
 │○ ${prefix}anonymous2
 │○ ${prefix}astronotspace
@@ -1707,161 +1469,68 @@ exports.listMenu2 = (prefix) => {
 │○ ${prefix}wallpaperaov 
 ╰❒ ${prefix}wallpaperml 
 
-
-╭─❒ 「 Islamic Menu 」
-│○ ${prefix}asmaulhusna
-│○ ${prefix}kisahnabi [nabi]
-│○ ${prefix}jadwalshalat [daerah]
-│○ ${prefix}randomquran
-│○ ${prefix}randomquran2
-│○ ${prefix}listsurah
-│○ ${prefix}tafsirsurah [surah]
-╰❒ ${prefix}alquranaudio [surah|ayat]
-
-╭─❒ 「 Sound Menu 」
-│○ ${prefix}sound1
-│○ ${prefix}sound2
-│○ ${prefix}sound3
-│○ ${prefix}sound4
-│○ ${prefix}sound5
-│○ ${prefix}sound6
-│○ ${prefix}sound7
-│○ ${prefix}sound8
-│○ ${prefix}sound9
-│○ ${prefix}sound10
-│○ ${prefix}sound11
-│○ ${prefix}sound12
-│○ ${prefix}sound13
-│○ ${prefix}sound14
-│○ ${prefix}sound15
-│○ ${prefix}sound16
-│○ ${prefix}sound17
-│○ ${prefix}sound18 
-│○ ${prefix}sound19
-│○ ${prefix}sound20
-│○ ${prefix}sound21
-│○ ${prefix}sound22
-│○ ${prefix}sound23
-│○ ${prefix}sound24
-│○ ${prefix}sound25
-│○ ${prefix}sound26
-│○ ${prefix}sound27
-│○ ${prefix}sound28
-│○ ${prefix}sound29
-│○ ${prefix}sound30
-│○ ${prefix}sound31
-│○ ${prefix}sound32
-│○ ${prefix}sound33
-│○ ${prefix}sound34
-│○ ${prefix}sound35
-│○ ${prefix}sound36
-│○ ${prefix}sound37
-│○ ${prefix}sound38
-│○ ${prefix}sound39
-│○ ${prefix}sound40
-│○ ${prefix}sound41
-│○ ${prefix}sound42
-│○ ${prefix}sound43
-│○ ${prefix}sound44
-│○ ${prefix}sound45
-│○ ${prefix}sound46
-│○ ${prefix}sound47
-│○ ${prefix}sound48
-│○ ${prefix}sound49
-│○ ${prefix}sound50
-│○ ${prefix}sound51
-│○ ${prefix}sound52
-│○ ${prefix}sound53
-│○ ${prefix}sound54
-│○ ${prefix}sound55
-│○ ${prefix}sound56
-│○ ${prefix}sound57
-│○ ${prefix}sound58
-│○ ${prefix}sound59
-│○ ${prefix}sound60
-│○ ${prefix}sound61
-│○ ${prefix}sound62
-│○ ${prefix}sound63
-│○ ${prefix}sound64
-│○ ${prefix}sound65
-│○ ${prefix}sound66
-│○ ${prefix}sound67
-│○ ${prefix}sound68
-│○ ${prefix}sound69
-╰❒ ${prefix}sound70
-
 ╭─❒ 「 TqTo 」 
-│○ My God
-│○ My Parents
-│○ Fatih A.
-│○ Ferdiz
-│○ DikaArdnt
-│○ Mhankbarbar
-│○ Nurutomo
-│○ ZeeoneOfc
-│○ Penyedia Module
+│○ Workx
+│○ My Brain
+│○ You
 ╰❒ And All Support
     `
 }
 
 exports.rules = (prefix) => {
     return `
-*── 「 RULES AND FAQ 」 ──*
+*── 「 REGRAS E PERGUNTAS FREQUENTES 」 ──*
 
-1. Jangan spam bot. 🙅
-2. Jangan telepon bot. ☎️
-3. Jangan membandingkan bot 👍
+1. Não faça spam bots. 🙅
+2. Não chame bots no privado. ☎️
+3. Não compare bots👍
 
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan.
+🗯️ Os bots não respondem ou demoram a responder?
+➡️ Talvez influenciado por rede, sinal, banido pelo Whatsapp e alguns motivos aleatórios.
 
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini bisa kalian dapatkan di YouTube ZEEONE OFC
+🗯️ DOnde posso obter o Script deste bot?
+➡️ Você pode obter este script contactando o admin digitando .owner
 
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk itu tergantung dari owner bot sendiri
+🗯️Posso adicionar ao grupo?
+➡️ Para isso depende do próprio dono do bot
 
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix & bisa kamu gunakan tanpa prefix
+🗯️ Qual é o prefixo?
+➡️ Este bot usa prefixo múltiplo e você pode usá-lo sem prefixo
 
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}menu* untuk memulai!
+Se você entende as regras, digite *${prefix}menu* para começar!
 
-⚠️ Segala kebijakan dan ketentuan bot dapat berubah kapan saja 
+⚠️ Todas as políticas e condições do bot estão sujeitas a alterações a qualquer momento
 
-Terimakasih! 
+Obrigado! 
 `
 }
 exports.welcome = () =>{
-	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
+	return`Bem vindo 🤗
 	
-╭ 𝖭𝖺𝗆𝖺 :
-│○ 𝖴𝗆𝗎𝗋 :
-│○ 𝖦𝖾𝗇𝖽𝖾𝗋 :
-│○ 𝖠𝗌𝗄𝗈𝗍 :
-╰❒ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
+╭ Nome :
+│○ Idade :
+│○ Genero :
+│○ Cidade :
+╰❒ Leia as regras do Grupo ~`
 }
 exports.leave = () =>{
-	return`Yah kok out 😣 Mental aman kan kak >.<
-Goodbye`
+	return`Bem, como é que saiu 😣 Mentalmente segura, certo >.<
+adeus`
 }
 exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
 
-Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://s.id/YouTube-Zeeoneofc
+Com o Admin para a aquisicao 
 `
 }
 exports.tos = (ownernomer) => {
     return `
-*-------「 DONATE 」 -------*
+*-------「 Apoiar 」 -------*
 
 Hi bro ☺️ 
-You can support me to keep this bot up to date by donating
+Aquele valor que queres ajudar a melhorar este projecto podes mandar para:
 
-Any amount of your donation will be very meaningful 👍
-Thanks!
-
-Contact person Owner:
+MIM:
 wa.me/${ownernomer}
 
     `
@@ -1906,7 +1575,6 @@ return`╭─❒ 「 Owner 」
 │○ ${prefix}addpremium
 │○ ${prefix}delpremium
 │○ ${prefix}listpremium
-│○ ${prefix}nsfw [on/off]
 │○ ${prefix}mute [on/off]
 │○ ${prefix}autoblok212 [on/off]
 │○ ${prefix}banchat
@@ -1984,7 +1652,6 @@ exports.group = (prefix) =>{
 │○ ${prefix}cekdemote
 │○ ${prefix}delpromote
 │○ ${prefix}deldemote
-│○ ${prefix}nsfw [on/off]
 │○ ${prefix}antilink [on/off]
 │○ ${prefix}antiwame [on/off]
 │○ ${prefix}take packname|author
@@ -1995,11 +1662,7 @@ exports.group = (prefix) =>{
 
 exports.anime = (prefix) =>{
 	return`╭─❒ 「 Anime 」 
-│○ ${prefix}quotesanime
-│○ ${prefix}anime [query]
-│○ ${prefix}animeinfo
-│○ ${prefix}manga [query]
-╰❒ ${prefix}character [query]
+│○ INDISPONIVEL
 `}
 
 exports.tag = (prefix) =>{
@@ -2033,7 +1696,6 @@ exports.search = (prefix) =>{
 │○ ${prefix}wikimedia [query]
 │○ ${prefix}apksearch
 │○ ${prefix}findapk
-│○ ${prefix}hentai
 │○ ${prefix}wattpad [query]
 │○ ${prefix}webtoons [query]
 │○ ${prefix}brainly [query]
@@ -2089,7 +1751,6 @@ exports.effect = (prefix) =>{
 │○ ${prefix}circle [reply image/stiker]
 │○ ${prefix}challenger [reply image/stiker]
 │○ ${prefix}burn [reply image/stiker]
-│○ ${prefix}brazzers [reply image/stiker]
 ╰❒ ${prefix}beautiful [reply image/stiker]
 `}
 
@@ -2098,7 +1759,6 @@ exports.effect2 = (prefix) =>{
 	return`╭─❒ 「 Sticker Effect 」 
 │○ ${prefix}jail [reply image/stiker]
 │○ ${prefix}red [reply image/stiker]
-│○ ${prefix}gay [reply image/stiker]
 │○ ${prefix}bloo [reply image/stiker]
 │○ ${prefix}blue [reply image/stiker]
 │○ ${prefix}sepia [reply image/stiker]
@@ -2144,120 +1804,19 @@ return`╭─❒ 「 Download 」
 │○ ${prefix}gitclone [link repo]
 │○ ${prefix}gitrepo [username repo branch]
 │○ ${prefix}mediafire [link]
-│○ ${prefix}nhentaipdf [id]
 ╰❒ ${prefix}twitter link
 `
 }
 
 exports.ranime = (prefix) =>{
-	return`╭─❒ 「 Random Anime 」
-│○ ${prefix}loli
-│○ ${prefix}neko
-│○ ${prefix}waifu
-│○ ${prefix}shinobu
-│○ ${prefix}megumin
-│○ ${prefix}bully
-│○ ${prefix}cuddle
-│○ ${prefix}cry
-│○ ${prefix}hug
-│○ ${prefix}awoo
-│○ ${prefix}kiss
-│○ ${prefix}lick
-│○ ${prefix}pat
-│○ ${prefix}smug
-│○ ${prefix}bonk
-│○ ${prefix}yeet
-│○ ${prefix}blush
-│○ ${prefix}smile
-│○ ${prefix}wave
-│○ ${prefix}highfive
-│○ ${prefix}handhold
-│○ ${prefix}nom
-│○ ${prefix}bite
-│○ ${prefix}glomp
-│○ ${prefix}slap
-│○ ${prefix}kill
-│○ ${prefix}happy
-│○ ${prefix}wink
-│○ ${prefix}poke
-│○ ${prefix}dance
-╰❒ ${prefix}cringe
+	return`╭─❒ 「 INDISPONIVEL 」
+│○ INDISPONIVEL
 `
 }
 
 exports.nsfw = (prefix) =>{
-	return`╭─❒ 「 Nsfw & Sfw 」
-│○ ${prefix}cuddle
-│○ ${prefix}feed
-│○ ${prefix}foxgirl
-│○ ${prefix}kemonomimi2
-│○ ${prefix}woof
-│○ ${prefix}holo2
-│○ ${prefix}hug
-│○ ${prefix}kiss
-│○ ${prefix}lizard
-│○ ${prefix}meowi
-│○ ${prefix}neko2
-│○ ${prefix}pat
-│○ ${prefix}poke
-│○ ${prefix}slap
-│○ ${prefix}tickle
-│○ ${prefix}baka
-│○ ${prefix}smug
-│○ ${prefix}neko-sfw
-│○ ${prefix}hentai
-│○ ${prefix}hentai-gif
-│○ ${prefix}spank
-│○ ${prefix}blowjob
-│○ ${prefix}cumarts
-│○ ${prefix}eroyuri
-│○ ${prefix}eroneko
-│○ ${prefix}erokemonomimi
-│○ ${prefix}erokitsune
-│○ ${prefix}ero
-│○ ${prefix}feet
-│○ ${prefix}erofeet
-│○ ${prefix}feetgif
-│○ ${prefix}femdom
-│○ ${prefix}futanari
-│○ ${prefix}hentai
-│○ ${prefix}holoero
-│○ ${prefix}holo
-│○ ${prefix}keta
-│○ ${prefix}kitsune
-│○ ${prefix}kemonomimi
-│○ ${prefix}pussyart
-│○ ${prefix}pussywankgif
-│○ ${prefix}girl-solo
-│○ ${prefix}girl-solo-gif
-│○ ${prefix}tits
-│○ ${prefix}trap
-│○ ${prefix}yuri
-│○ ${prefix}avatar2
-│○ ${prefix}anal
-│○ ${prefix}bj
-│○ ${prefix}boobs
-│○ ${prefix}classic
-│○ ${prefix}cumsluts
-│○ ${prefix}kuni
-│○ ${prefix}lesbian
-│○ ${prefix}neko
-│○ ${prefix}neko-gif
-│○ ${prefix}ahegao
-│○ ${prefix}bdsm
-│○ ${prefix}cuckold
-│○ ${prefix}cum
-│○ ${prefix}foot
-│○ ${prefix}gangbang
-│○ ${prefix}glasses
-│○ ${prefix}jahy
-│○ ${prefix}masturbation
-│○ ${prefix}nsfw-neko
-│○ ${prefix}orgy
-│○ ${prefix}panties
-│○ ${prefix}tentacles
-│○ ${prefix}thighs
-╰❒ ${prefix}zettai
+	return`╭─❒ 「 INDISPONIVEL 」
+│○ ${prefix}INDISPONIVEL
 `
 }
 
@@ -2276,7 +1835,6 @@ exports.textpro = (prefix) =>{
 │○ ${prefix}stone text|text2
 │○ ${prefix}marvel text|text2
 │○ ${prefix}marvel2 text|text2
-│○ ${prefix}pornhub text|text2
 │○ ${prefix}avengers text|text2
 │○ ${prefix}metal-rainbow text|text2
 │○ ${prefix}metal-gold text|text2
@@ -2461,142 +2019,37 @@ return`╭─❒ 「 Others 」
 }
 exports.game = (prefix) =>{
 return`╭─❒ 「 Game Menu 」
-│○ ${prefix}tembak
-│○ ${prefix}tolak
-│○ ${prefix}terima
-│○ ${prefix}putusin
-│○ ${prefix}ikhlasin
-│○ ${prefix}cekpacar
-│○ ${prefix}kuismath
-│○ ${prefix}tebakgambar
-│○ ${prefix}tebakkata
-│○ ${prefix}tebakbendera
-│○ ${prefix}tebakkalimat
-│○ ${prefix}tebaksiapa
-│○ ${prefix}tebakkabupaten
-│○ ${prefix}tebakkimia
-│○ ${prefix}tebaklirik
-│○ ${prefix}tebaktebakan
-│○ ${prefix}tekateki
-│○ ${prefix}susunkata
-╰❒ ${prefix}caklontong
+│○ ${prefix}INDISPONIVEL
 `
 }
 exports.asupan = (prefix) =>{
-return`╭─❒ 「 Asupan Menu 」
-│○ ${prefix}chika
-│○ ${prefix}delvira
-│○ ${prefix}ayu
-│○ ${prefix}bunga
-│○ ${prefix}aura
-│○ ${prefix}nisa
-│○ ${prefix}ziva
-│○ ${prefix}yana
-│○ ${prefix}viona
-│○ ${prefix}syania
-│○ ${prefix}riri
-│○ ${prefix}syifa
-│○ ${prefix}mama_gina
-│○ ${prefix}alcakenya
-│○ ${prefix}mangayutri
-│○ ${prefix}rikagusriani
-│○ ${prefix}asupan
-│○ ${prefix}bocil
-│○ ${prefix}geayubi
-│○ ${prefix}santuy
-│○ ${prefix}ukhty
-╰❒ ${prefix}syifa
+return`╭─❒ 「 INDISPONIVEL 」
+│○ ${prefix}INDISPONIVEL
 `
 }
 exports.cecan = (prefix) =>{
-return`╭─❒ 「 Random Cewe 」
-│○ ${prefix}china 
-│○ ${prefix}indonesia 
-│○ ${prefix}malaysia 
-│○ ${prefix}thailand 
-│○ ${prefix}korea 
-│○ ${prefix}japan 
-│○ ${prefix}vietnam 
-│○ ${prefix}jenni 
-│○ ${prefix}jiso 
-│○ ${prefix}lisa  
-╰❒ ${prefix}rose
+return`╭─❒ 「 INDISPONIVEL 」
+│○ ${prefix}INDISPONIVEL
 `
 }
 
 exports.tqto = () =>{
 	return`╭─❒ 「 TqTo 」 
-│○ My God
-│○ My Parents
-│○ Fatih A.
-│○ Ferdiz
-│○ DikaArdnt
-│○ Mhankbarbar
-│○ Nurutomo
-│○ ZeeoneOfc
-│○ Penyedia Module
+│○ My Brain
+│○ You
 ╰❒ And All Support
 `
 }
 
 exports.primbonmenu = (prefix) =>{
-	return`╭─❒ 「 Primbon 」
-│○ ${prefix}nomorhoki 887435047326
-│○ ${prefix}artimimpi [query]
-│○ ${prefix}artinama [query]
-│○ ${prefix}ramaljodoh
-│○ ${prefix}ramaljodohbali
-│○ ${prefix}suamiistri
-│○ ${prefix}ramalcinta
-│○ ${prefix}cocoknama
-│○ ${prefix}pasangan
-│○ ${prefix}jadiannikah
-│○ ${prefix}sifatusaha
-│○ ${prefix}rezeki
-│○ ${prefix}pekerjaan
-│○ ${prefix}nasib
-│○ ${prefix}penyakit
-│○ ${prefix}tarot
-│○ ${prefix}fengshui
-│○ ${prefix}haribaik
-│○ ${prefix}harisangar
-│○ ${prefix}harisial
-│○ ${prefix}nagahari
-│○ ${prefix}arahrezeki
-│○ ${prefix}peruntungan
-│○ ${prefix}weton
-│○ ${prefix}karakter
-│○ ${prefix}keberuntungan
-│○ ${prefix}memancing
-│○ ${prefix}masasubur
-│○ ${prefix}zodiak 
-╰❒ ${prefix}shio [query]
+	return`╭─❒ 「 INDISPONIVEL 」
+│○ ${prefix}INDISPONIVEL
 `
 }
 
 exports.stcmenu = (prefix) =>{
 	return`╭─❒ 「 Telegram Sticker 」
-│○ ${prefix}awoawo
-│○ ${prefix}benedict
-│○ ${prefix}chat
-│○ ${prefix}dbfly
-│○ ${prefix}dino_kuning
-│○ ${prefix}doge
-│○ ${prefix}gojosatoru
-│○ ${prefix}hope_boy
-│○ ${prefix}jisoo
-│○ ${prefix}kr_robot
-│○ ${prefix}kucing
-│○ ${prefix}lonte
-│○ ${prefix}manusia_lidi
-│○ ${prefix}menjamet
-│○ ${prefix}meow
-│○ ${prefix}nicholas
-│○ ${prefix}patrick
-│○ ${prefix}popoci
-│○ ${prefix}sponsbob
-│○ ${prefix}kawan_sponsbob
-╰❒ ${prefix}tyni
+│○ ${prefix}INDISPONIVEL
 `}
 
 exports.ephotomenu = (prefix) =>{
@@ -2760,15 +2213,8 @@ exports.logomenu = (prefix) =>{
 }
 
 exports.islammenu = (prefix) =>{
-	return`╭─❒ 「 Islamic Menu 」
-│○ ${prefix}asmaulhusna
-│○ ${prefix}kisahnabi [nabi]
-│○ ${prefix}jadwalshalat [daerah]
-│○ ${prefix}randomquran
-│○ ${prefix}randomquran2
-│○ ${prefix}listsurah
-│○ ${prefix}tafsirsurah [surah]
-╰❒ ${prefix}alquranaudio [surah|ayat]
+	return`╭─❒ 「 INDISPONIVEL 」
+│○ ${prefix}INDISPONIVEL
 `
 }
 exports.anonchat = (prefix) =>{
@@ -2857,48 +2303,8 @@ exports.storagemenu = (prefix) =>{
 }
 
 exports.rpgmenu = (prefix) =>{
-	return`╭─❒ 「 Rpg Games 」
-│○ ${prefix}adventure
-│○ ${prefix}weekly
-│○ ${prefix}use
-│○ ${prefix}transfer
-│○ ${prefix}slot
-│○ ${prefix}shop
-│○ ${prefix}pasar
-│○ ${prefix}profile
-│○ ${prefix}ojek
-│○ ${prefix}open
-│○ ${prefix}nguli
-│○ ${prefix}narik
-│○ ${prefix}nabung
-│○ ${prefix}monthly
-│○ ${prefix}mining
-│○ ${prefix}merampok
-│○ ${prefix}mancing
-│○ ${prefix}kolam
-│○ ${prefix}koboy
-│○ ${prefix}kerja
-│○ ${prefix}kandang
-│○ ${prefix}levelup
-│○ ${prefix}judi
-│○ ${prefix}inventory
-│○ ${prefix}hourly
-│○ ${prefix}fishop
-│○ ${prefix}feed
-│○ ${prefix}duel
-│○ ${prefix}daily
-│○ ${prefix}craft
-│○ ${prefix}cooldown
-│○ ${prefix}cook
-│○ ${prefix}collect
-│○ ${prefix}chop
-│○ ${prefix}casino
-│○ ${prefix}buy
-│○ ${prefix}bank 
-│○ ${prefix}bansos
-│○ ${prefix}berdagang
-│○ ${prefix}berkebon
-╰❒ ${prefix}build
+	return`╭─❒ 「 Games 」
+│○ ${prefix} INDISPONIVEL
 `
 }
 
@@ -2969,75 +2375,6 @@ exports.photooxy = (prefix)=>{
 
 exports.soundmenu = (prefix) =>{
 return`╭─❒ 「 Sound Menu 」
-│○ ${prefix}sound1
-│○ ${prefix}sound2
-│○ ${prefix}sound3
-│○ ${prefix}sound4
-│○ ${prefix}sound5
-│○ ${prefix}sound6
-│○ ${prefix}sound7
-│○ ${prefix}sound8
-│○ ${prefix}sound9
-│○ ${prefix}sound10
-│○ ${prefix}sound11
-│○ ${prefix}sound12
-│○ ${prefix}sound13
-│○ ${prefix}sound14
-│○ ${prefix}sound15
-│○ ${prefix}sound16
-│○ ${prefix}sound17
-│○ ${prefix}sound18 
-│○ ${prefix}sound19
-│○ ${prefix}sound20
-│○ ${prefix}sound21
-│○ ${prefix}sound22
-│○ ${prefix}sound23
-│○ ${prefix}sound24
-│○ ${prefix}sound25
-│○ ${prefix}sound26
-│○ ${prefix}sound27
-│○ ${prefix}sound28
-│○ ${prefix}sound29
-│○ ${prefix}sound30
-│○ ${prefix}sound31
-│○ ${prefix}sound32
-│○ ${prefix}sound33
-│○ ${prefix}sound34
-│○ ${prefix}sound35
-│○ ${prefix}sound36
-│○ ${prefix}sound37
-│○ ${prefix}sound38
-│○ ${prefix}sound39
-│○ ${prefix}sound40
-│○ ${prefix}sound41
-│○ ${prefix}sound42
-│○ ${prefix}sound43
-│○ ${prefix}sound44
-│○ ${prefix}sound45
-│○ ${prefix}sound46
-│○ ${prefix}sound47
-│○ ${prefix}sound48
-│○ ${prefix}sound49
-│○ ${prefix}sound50
-│○ ${prefix}sound51
-│○ ${prefix}sound52
-│○ ${prefix}sound53
-│○ ${prefix}sound54
-│○ ${prefix}sound55
-│○ ${prefix}sound56
-│○ ${prefix}sound57
-│○ ${prefix}sound58
-│○ ${prefix}sound59
-│○ ${prefix}sound60
-│○ ${prefix}sound61
-│○ ${prefix}sound62
-│○ ${prefix}sound63
-│○ ${prefix}sound64
-│○ ${prefix}sound65
-│○ ${prefix}sound66
-│○ ${prefix}sound67
-│○ ${prefix}sound68
-│○ ${prefix}sound69
-╰❒ ${prefix}sound70
+│○ ${prefix}INDISPONIVEL
 `
 }
